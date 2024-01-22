@@ -123,7 +123,7 @@
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #e89980;
+		color: #f4c2c2;
 		text-decoration: none;
 	}
 
@@ -2109,8 +2109,8 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #e89980;
-			box-shadow: 0 0 0 2px #e89980;
+			border-color: #f4c2c2;
+			box-shadow: 0 0 0 2px #f4c2c2;
 		}
 
 	select {
@@ -2215,8 +2215,8 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #e89980;
-			box-shadow: 0 0 0 1px #e89980;
+			border-color: #f4c2c2;
+			box-shadow: 0 0 0 1px #f4c2c2;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2422,7 +2422,7 @@
 			}
 
 			.icon.major.accent2 {
-				background: #e89980;
+				background: #f4c2c2;
 				color: #ffffff;
 			}
 
@@ -2663,6 +2663,25 @@
 						}
 
 		}
+        .button-row {
+            display: flex;
+            justify-content: space-between; /* Adjust as needed, e.g., space-around, space-evenly */
+        }
+
+        .button {
+            /* Add any common styles for your buttons here */
+        }
+
+        /* Add specific styles for each button if needed */
+        .button.special {
+            /* Styles for special button */
+        }
+
+        .button.alt {
+            /* Styles for alternate button */
+        }
+
+
 
 /* Table */
 
@@ -2848,8 +2867,8 @@
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #e89980;
-			color: #ffffff !important;
+			background-color: #f4c2c2;
+			color: #f4c2c2 !important;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2931,7 +2950,7 @@
 	}
 
 	#header {
-		background: #444;
+		background: #f4c2c2;
 		color: #bbb;
 		cursor: default;
 		height: 3.25em;
@@ -3129,7 +3148,7 @@
 			}
 
 			.dropotron li.active > a, .dropotron li.active > span, .dropotron li:hover > a, .dropotron li:hover > span {
-				background: #e89980;
+				background: #f4c2c2;
 				color: #ffffff;
 			}
 
@@ -3303,8 +3322,8 @@
 /* CTA */
 
 	#cta {
-		background: #e89980;
-		color: #f9e6df;
+		background: #f4c2c2;
+		color: #fff;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
 	}
@@ -3325,7 +3344,7 @@
 		#cta .button {
 			box-shadow: none;
 			background: #fff;
-			color: #e89980;
+			color: #f4c2c2;
 		}
 
 		#cta input[type="text"],
