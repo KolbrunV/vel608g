@@ -21,7 +21,7 @@
 							<li><a href="index.html">Heim</a></li>
                             <li><a href="left-sidebar.html">Um mig</a></li>
 							<li>
-								<a href="#" class="icon solid fa-angle-down">Verkefni</a>
+								<a href="#" class="">Verkefni</a>
 								<ul>
 									<li><a href="verkefni1.html">Verkefni I</a></li>
 									<li><a href="verkefni2.html">Verkefni II</a></li>
@@ -46,21 +46,81 @@
 								<section class="box">
                                     <h3>Verkefnið sjálft</h3>
 									<p>Fyrsta verkefnið var að búa til vefsíðu til að halda utan um öll verkefni sem eru gerð í áfanganum Tölvustudd framleiðsla sem kenndur er í Háskóla Íslands. Þá er einnig hægt að finna upplýsingar um mig og ferilskrá á síðunni.</p>
+                                </section>
                                     
-                                    <hr />
-                                    
+                                <section class="box">
                                     <h3>Upplýsingaöflun</h3>
-                                    <p> Áður en hafist var handa við gerð verkefnisins horfði ég á myndskeið frá kennara. Þá skoðaði ég einnig heimasíður frá fyrri nemendum en ég sótti mikinn innblástur til heimasíðu <a href="https://saemi10.github.io/TolvustuddFramleidsla/">Sæmundar </a> og <a href="https://bjorgeva.github.io/website_project/project1.html">Bjargar</a>. 
+                                    <p> Áður en hafist var handa við gerð verkefnisins horfði ég á myndskeið frá kennara. Þá skoðaði ég einnig heimasíður frá fyrri nemendum en ég sótti mikinn innblástur til heimasíðu <a href="https://saemi10.github.io/TolvustuddFramleidsla/" target="_blank">Sæmundar </a> og <a href="https://bjorgeva.github.io/website_project/project1.html" target="_blank">Bjargar</a>. 
                                     <p/>
-                                    <ul class="actions fit small">
+                                    <ul class="actions special">
 										<li><a href="https://www.youtube.com/playlist?list=PLGuNTpc293hpIpAVSJ3-SgNolCTa1BfJE" class="button fit small" target="_blank">Myndskeið frá kennara</a></li>
 									</ul>
-                
-                                    <hr />
+                                </section>
                                     
+                                <section class="box">
                                     <h3>Gerð heimasíðunnar</h3>
-                                    <p> Ég byrjaði á því að fara inn á <a href="https://brackets.io/ ">heimasíðu Brackets</a> og hlóð niður hugbúnaðinum. Þegar ég var búin að því valdi ég mér sniðmát hjá <a href="https://brackets.io/ ">HTML5 UP</a>. Ég valdi sniðmátið <i>Alpha</i> en sótti einnig eina skrá frá sniðmátinu <i>Helios</i>. Áður en lengra var haldið 
+                                    <p> Ég byrjaði á því að fara inn á <a href="https://brackets.io/" target="_blank">heimasíðu Brackets</a> og hlóð niður hugbúnaðinum. Þegar ég var búin að því valdi ég mér sniðmát hjá <a href="https://html5up.net" target="_blank">HTML5 UP</a>. Ég valdi sniðmátið <i>Alpha</i> en sótti einnig eina skrá frá sniðmátinu <i>Helios</i>. Áður en lengra var haldið fór ég og bjó mér til aðgang inn á <a href = "https://github.com/" target="_blank"> Github</a>. Mjög auðvelt er að búa til aðganginn sjálfann en þegar það er búið þarf að búa til vefslóð fyrir vefsíðuna sjálfa. Hér fyrir neðan verður farið í gegnum hvert skref fyrir sig. 
                                     </p>
+                                    <h4>Skref 1</h4>
+                                    <p>Þegar þú ert kominn inn á þína síðu stendur vinstra megin á skjánum <i>Top Repositories</i> og svo er hnappur <i>New</i> (sjá mynd). Ýtið á hann</p>
+                                    <div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/skref1.jpg" alt="" /></span></div>
+                                    </div>
+                                    <br>
+                                    <h4>Skref 2</h4>
+                                    <p>Þegar búið er að ýta á <i>New</i> opnast ný síða (sjá mynd). Þá þarf að fylla inn í stjörnumerkta reiti og passa að hafa hakað í <i>Public</i> svo að þú getir birt síðuna. Þegar þessu er lokið þarf að smella á <i>Create repository</i></p>.
+                                    <div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image feature"><img src="images/skref2.jpg" alt="" width="500"/></span></div>
+                                    </div>
+                                    <br>
+                                    <h4>Skref 3</h4>
+                                    <p>Nú þarf að finna möppuna þar sem allar skrár fyrir vefsíðurnar eru í, hægri smella á hana og velja <i>New Terminal at Folder</i> (sjá mynd).</p>
+                                    <div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/newterminal.jpg" alt=""/></span></div>
+                                    </div>
+                                    <br>
+                                    <h4>Skref 4</h4>
+                                    <p>Nú þarf að fara aftur inn á Github. Þegar búið er ýta á <i>Create repository</i> opnast nýr gluggi með eftirfarandi kóða:</p>
+                                    <pre>echo "# test" >>README.md
+git init
+git add .
+git commit -m "first commit" 
+git branch -M main
+git remote add origin https://github.com/KolbrunV/test.git 
+git push -u origin main</pre>
+                                    <p>Þá þarf að afrita kóðann, og líma inn í Terminal gluggan sem við opnuðum í skrefi 3, og ýta á <i>return</i>.</p>
+                                    <h4>Skref 5</h4>
+                                    <p>Þegar það er komið er hægt að fara aftur inn á Github, endurhlaða síðunni og þá ættu skrárnar að vera komnar þangað. Ath. þetta getur tekið smá stund.</p>
+                                    <h4>Skref 6</h4>
+                                    <p>Þegar allar skrárnar eru komnar þarf að fara í <i>Settings</i></p>
+                                     <div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image feature"><img src="images/settings.jpg" alt="" width="500"/></span></div>
+                                    </div>
+                                    <br>
+                                    <h4>Skref 7</h4>
+                                    <p>Vinstra megin á síðunni kemur listi og þarf að fara í <i>Pages</i>.</p>
+                                    <div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/pages.jpg" alt=""/></span></div>
+                                    </div>
+                                    <br>
+                                    <h4>Skref 8</h4>
+                                    <p>Þá þarf að passa að hafa <i>main</i> og <i>roots</i> valið og ýta svo á save.</p>
+                                    <div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image feature"><img src="images/main.jpg" alt="" width="500"/></span></div>
+                                    </div>
+                                    <br>
+                                    <h4>Skref 9</h4>
+                                    <p>Þá á allt að vera klárt, bara ýta á linkinn og njóta vefsíðunnar.</p>
+                                </section>
+                            
+                                <section class="box">
+                                    <h3>Vesen</h3>
+                                    <p>Ég lenti í smá veseni í skrefi 3 og 4 hér að ofan og þurfti því að fara aðra leið. Þegar ég fór í gegnum kóðann í skrefi 3 bað tölvan mig um að stimpla inn notendanafni og lykilorði mínu hjá Github. Ég gerði það en þá kom upp sú villa að ekki væri lengur hægt að nota þessa aðferð til þess að tengja Git og Github saman (sjá mynd).</p>
+                                    <div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image feature"><img src="images/vesen.jpg" alt="" width="900"/></span></div>
+                                    </div>
+                                    <p></p>
+                            
                                 </section>
                             
                                 <section class="box">
@@ -68,6 +128,7 @@
 									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+                                   
 
 									<hr />
 
@@ -449,14 +510,10 @@
 				</section>
 
 			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+				<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/kolbrún-védís-979aa4291/" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://www.facebook.com/kolbrun.vediz" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/kolbrunvedis/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
